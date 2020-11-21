@@ -13,15 +13,23 @@ public class PlayerController : MonoBehaviour
     {
         playerReader = GetComponent<PlayerReader>();
     }
+    private void Start()
+    {
+        UpdateAllViews();
+    }
     private void Update()
     {
         if (Input.GetKeyDown(updateKey))
         {
-            Player[] players = playerReader.GetAll();
-            for (int i = 0; i < playerViews.Length; i++)
-            {
-                playerViews[i].UpdateView(players[i]);
-            }
+            UpdateAllViews();
+        }
+    }
+    private void UpdateAllViews()
+    {
+        Player[] players = playerReader.GetAll();
+        for (int i = 0; i < playerViews.Length; i++)
+        {
+            playerViews[i].UpdateView(players[i]);
         }
     }
 }

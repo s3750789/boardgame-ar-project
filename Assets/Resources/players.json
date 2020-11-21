@@ -6,13 +6,13 @@
         },
         {
             "name": "Khai1",
-            "cash": 40000,
-            "life": 3
+            "cash": 99999,
+            "life": 1
         },
         {
             "name": "Khai2",
             "cash": 10000,
-            "life": 2
+            "life": 0
         },
         {
             "name": "Khai3",
