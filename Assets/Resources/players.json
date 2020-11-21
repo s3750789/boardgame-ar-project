@@ -1,0 +1,23 @@
+{
+    "players": [{
+            "name": "Khai",
+            "cash": 10000,
+            "life": 3
+        },
+        {
+            "name": "Khai1",
+            "cash": 40000,
+            "life": 3
+        },
+        {
+            "name": "Khai2",
+            "cash": 10000,
+            "life": 2
+        },
+        {
+            "name": "Khai3",
+            "cash": 10000,
+            "life": 1
+        }
+    ]
+}
