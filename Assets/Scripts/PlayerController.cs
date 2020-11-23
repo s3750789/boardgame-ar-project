@@ -13,9 +13,13 @@ public class PlayerController : MonoBehaviour
     {
         playerReader = GetComponent<PlayerReader>();
     }
-    private void Start()
+    private IEnumerator Start()
     {
-        UpdateAllViews();
+        while (true)
+        {
+            UpdateAllViews();
+            yield return new WaitForSeconds(2f);
+        }
     }
     private void Update()
     {
