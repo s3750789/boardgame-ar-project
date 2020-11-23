@@ -11,19 +11,20 @@ public class PlayerView : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI cashText;
     [SerializeField]
+    private Color emptyHeartColor;
+    [SerializeField]
     private Image[] hearts;
-
     public void UpdateView(Player player)
     {
         nameText.text = player.name;
-        cashText.text = player.cash.ToString();
+        cashText.text = string.Format("{0}", player.cash);
         foreach (var heart in hearts)
         {
-            heart.gameObject.SetActive(false);
+            heart.color = emptyHeartColor;
         }
         for (int i = 0; i < Mathf.Min(hearts.Length, player.life); i++)
         {
-            hearts[i].gameObject.SetActive(true);
+            hearts[i].color = Color.white;
         }
     }
 }

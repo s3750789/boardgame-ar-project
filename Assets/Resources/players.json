@@ -2,22 +2,22 @@
     "players": [{
             "name": "Khai",
             "cash": 10000,
-            "life": 3
-        },
-        {
-            "name": "Khai1",
-            "cash": 25000,
             "life": 2
         },
         {
-            "name": "Khai2",
-            "cash": 10000,
-            "life": 0
+            "name": "Tin",
+            "cash": 25000,
+            "life": 1
         },
         {
-            "name": "Khai3",
-            "cash": 10000,
-            "life": 1
+            "name": "Tsuuuu",
+            "cash": 80000,
+            "life": 2
+        },
+        {
+            "name": "Ahihi",
+            "cash": 20000,
+            "life": 2
         }
     ]
 }
