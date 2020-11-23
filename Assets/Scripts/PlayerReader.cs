@@ -1,18 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 public class PlayerReader : MonoBehaviour
 {
     [SerializeField]
-    private TextAsset playersFile;
+    private string playersPath = "/players.json";
+
     private void Start()
     {
         print(GetAll().Length);
     }
     public Player[] GetAll()
     {
-        return JsonUtility.FromJson<PlayerCollection>(playersFile.text).players;
+        string path = Application.streamingAssetsPath + playersPath;
+        string content = File.ReadAllText(path);
+        return JsonUtility.FromJson<PlayerCollection>(content).players;
     }
 
 }

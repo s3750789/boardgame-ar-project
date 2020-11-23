@@ -1,7 +1,7 @@
 {
     "players": [{
             "name": "Khai",
-            "cash": 10000,
+            "cash": 20000,
             "life": 2
         },
         {
