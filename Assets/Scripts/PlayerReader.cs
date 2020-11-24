@@ -8,10 +8,6 @@ public class PlayerReader : MonoBehaviour
     [SerializeField]
     private string playersPath = "/players.json";
 
-    private void Start()
-    {
-        print(GetAll().Length);
-    }
     public Player[] GetAll()
     {
         string path = Application.streamingAssetsPath + playersPath;
