@@ -249,7 +249,7 @@ GameObject:
   - component: {fileID: 765165811}
   - component: {fileID: 765165810}
   m_Layer: 0
-  m_Name: PlayerLoader
+  m_Name: Controllers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -308,6 +308,7 @@ MonoBehaviour:
   - {fileID: 1818814017}
   - {fileID: 38878617}
   updateKey: 32
+  bullet: {fileID: 3641143648169423873, guid: c7e5c66f85ad90f4a9696b410261e850, type: 3}
 --- !u!1 &795108063
 GameObject:
   m_ObjectHideFlags: 0
