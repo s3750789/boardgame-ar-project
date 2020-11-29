@@ -7,8 +7,6 @@ using UnityEngine.UI;
 public class PlayerView : MonoBehaviour
 {
     [SerializeField]
-    private TextMeshProUGUI nameText;
-    [SerializeField]
     private TextMeshProUGUI cashText;
     [SerializeField]
     private Color emptyHeartColor;
@@ -16,7 +14,6 @@ public class PlayerView : MonoBehaviour
     private Image[] hearts;
     public void UpdateView(Player player)
     {
-        nameText.text = player.name;
         cashText.text = string.Format("{0}", player.cash);
         foreach (var heart in hearts)
         {

@@ -1,23 +1,57 @@
 {
     "players": [{
-            "name": "Khai",
-            "cash": 20000,
-            "life": 2
+            "life": 3,
+            "cash": 10000,
+            "bangBulletCount": 0,
+            "clickBulletCount": 3,
+            "diamondCount": 1,
+            "pictureCount": 0,
+            "hasSurrender": false,
+            "isDead": false,
+            "cards": [{
+                    "x": 198,
+                    "y": 507,
+                    "type": "click"
+                },
+                {
+                    "x": 606,
+                    "y": 469,
+                    "type": "bang_dilation"
+                }
+            ]
         },
         {
-            "name": "Tin",
-            "cash": 25000,
-            "life": 1
+            "life": 3,
+            "cash": 0,
+            "bangBulletCount": 4,
+            "clickBullet": 4,
+            "diamondCount": 0,
+            "num_picture": 0,
+            "hasSurrender": false,
+            "isDead": false,
+            "cards": []
         },
         {
-            "name": "Tsuuuu",
-            "cash": 80000,
-            "life": 2
+            "life": 3,
+            "cash": 0,
+            "bangBulletCount": 4,
+            "clickBullet": 4,
+            "diamondCount": 0,
+            "num_picture": 0,
+            "hasSurrender": false,
+            "isDead": false,
+            "cards": []
         },
         {
-            "name": "Ahihi",
-            "cash": 20000,
-            "life": 2
+            "life": 3,
+            "cash": 0,
+            "bangBulletCount": 4,
+            "clickBullet": 4,
+            "diamondCount": 0,
+            "num_picture": 0,
+            "hasSurrender": false,
+            "isDead": false,
+            "cards": []
         }
     ]
 }
