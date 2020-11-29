@@ -12,7 +12,6 @@ public class Player
     public int diamondCount;
     public int pictureCount;
     public bool hasSurrender;
-    public bool isDead;
     public Card[] cards;
 }
 [System.Serializable]

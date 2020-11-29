@@ -7,7 +7,6 @@
             "diamondCount": 1,
             "pictureCount": 0,
             "hasSurrender": false,
-            "isDead": false,
             "cards": [{
                     "x": 198,
                     "y": 507,
@@ -28,7 +27,6 @@
             "diamondCount": 0,
             "num_picture": 0,
             "hasSurrender": false,
-            "isDead": false,
             "cards": []
         },
         {
@@ -39,7 +37,6 @@
             "diamondCount": 0,
             "num_picture": 0,
             "hasSurrender": false,
-            "isDead": false,
             "cards": []
         },
         {
@@ -50,7 +47,6 @@
             "diamondCount": 0,
             "num_picture": 0,
             "hasSurrender": false,
-            "isDead": false,
             "cards": []
         }
     ]
