@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class BulletReader
+public class BulletReader : IReader<Bullet>
 {
     [SerializeField]
     private string path = "/bullets.json";

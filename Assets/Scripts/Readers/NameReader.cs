@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class NameReader
+public class NameReader : IReader<string>
 {
     [SerializeField]
     private string path = "/names.json";

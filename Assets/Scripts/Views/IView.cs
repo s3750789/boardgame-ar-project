@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IReader<T>
+public interface IView<T>
 {
-    T[] GetAll();
+    void UpdateView(T t);
 }

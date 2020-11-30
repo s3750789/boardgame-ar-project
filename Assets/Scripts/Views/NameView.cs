@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-public class NameView : MonoBehaviour
+public class NameView : MonoBehaviour, IView<string>
 {
     [SerializeField]
     private TextMeshProUGUI nameText;

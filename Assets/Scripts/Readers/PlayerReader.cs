@@ -4,7 +4,7 @@ using System.IO;
 using UnityEngine;
 
 [System.Serializable]
-public class PlayerReader
+public class PlayerReader : IReader<Player>
 {
     [SerializeField]
     private string path = "/players.json";

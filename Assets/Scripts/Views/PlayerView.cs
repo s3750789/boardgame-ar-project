@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
-public class PlayerView : MonoBehaviour
+public class PlayerView : MonoBehaviour, IView<Player>
 {
     [SerializeField]
     private TextMeshProUGUI cashText;
