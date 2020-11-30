@@ -11,9 +11,9 @@ public class NameController : MonoBehaviour
     private NameView[] nameViews;
     private void Start()
     {
-        UpdateAllViews();
+        UpdateViews();
     }
-    private void UpdateAllViews()
+    private void UpdateViews()
     {
         string[] names = nameReader.GetAll();
         for (int i = 0; i < nameViews.Length; i++)

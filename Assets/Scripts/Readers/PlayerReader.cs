@@ -11,7 +11,7 @@ public class PlayerReader
 
     public Player[] GetAll()
     {
-        return JsonUtility.FromJson<PlayerCollection>(StreamingAssetsUtil.GetContent(path)).players;
+        return JsonUtility.FromJson<PlayerCollection>(StreamingAssetsHelper.GetContent(path)).players;
     }
 
 }

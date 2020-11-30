@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
-public static class StreamingAssetsUtil
+public static class StreamingAssetsHelper
 {
     public static string GetContent(string relPath)
     {

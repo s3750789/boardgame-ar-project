@@ -10,6 +10,6 @@ public class NameReader
 
     public string[] GetAll()
     {
-        return JsonUtility.FromJson<NameCollecton>(StreamingAssetsUtil.GetContent(path)).names;
+        return JsonUtility.FromJson<NameCollecton>(StreamingAssetsHelper.GetContent(path)).names;
     }
 }
