@@ -4,22 +4,19 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField]
-    private PlayerReader playerReader;
-    [SerializeField]
-    private PlayerView[] playerViews;
-    [SerializeField]
-    private KeyCode updateKey = KeyCode.Space;
+    [SerializeField] private PlayerReader playerReader;
+    [SerializeField] private PlayerView[] playerViews;
+    [SerializeField] private KeyCode updateKey = KeyCode.Space;
+    [SerializeField] private int updateInterval = 2;
 
-
-    // private IEnumerator Start()
-    // {
-    //     while (true)
-    //     {
-    //         UpdateAllViews();
-    //         yield return new WaitForSeconds(2f);
-    //     }
-    // }
+    private IEnumerator Start()
+    {
+        while (true)
+        {
+            UpdateViews();
+            yield return new WaitForSeconds(updateInterval);
+        }
+    }
     private void Update()
     {
         if (Input.GetKeyDown(updateKey))

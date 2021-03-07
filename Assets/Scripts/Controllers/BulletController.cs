@@ -9,11 +9,20 @@ public class BulletController : MonoBehaviour
     [SerializeField]
     private GameObject bulletPrefab;
     private Camera cam;
-    private GameObject bulletContainer;
+    private Transform bulletContainer;
+    private int currentBulletCount = 0;
+    [SerializeField] private int bulletCap = 20;
     private void Awake()
     {
         cam = Camera.main;
-        bulletContainer = new GameObject();
+        bulletContainer = new GameObject().transform;
+        bulletContainer.name = "BulletContainer";
+        for (int i = 0; i < bulletCap; i++)
+        {
+            GameObject g = Instantiate(bulletPrefab);
+            g.transform.SetParent(bulletContainer);
+            g.SetActive(false);
+        }
     }
     private void Update()
     {
@@ -22,15 +31,22 @@ public class BulletController : MonoBehaviour
     public void UpdateViews()
     {
         Bullet[] bullets = bulletReader.GetAll();
-        foreach (Transform bullet in bulletContainer.transform)
+        int bulletCount = bullets.Length;
+        if (currentBulletCount != bulletCount)
         {
-            Destroy(bullet.gameObject);
+            foreach (Transform bullet in bulletContainer)
+            {
+                bullet.gameObject.SetActive(false);
+            }
+            for (int i = 0; i < bulletCount; i++)
+            {
+                bulletContainer.GetChild(i).gameObject.SetActive(true);
+            }
         }
-        foreach (var bullet in bullets)
+        for (int i = 0; i < bulletCount; i++)
         {
-            Vector3 position = cam.ScreenToWorldPoint(new Vector3(bullet.x, Screen.height - bullet.y, 10));
-            print(position);
-            Instantiate(bulletPrefab, position, Quaternion.identity, bulletContainer.transform);
+            Bullet bullet = bullets[i];
+            bulletContainer.GetChild(i).transform.position = cam.ScreenToWorldPoint(new Vector3(bullet.x, Screen.height - bullet.y, 10));
         }
     }
 
