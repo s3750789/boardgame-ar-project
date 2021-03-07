@@ -12,6 +12,7 @@ public class BulletController : MonoBehaviour
     private Transform bulletContainer;
     private int currentBulletCount = 0;
     [SerializeField] private int bulletCap = 20;
+    [SerializeField] private Vector3 offset;
     private void Awake()
     {
         cam = Camera.main;
@@ -46,7 +47,7 @@ public class BulletController : MonoBehaviour
         for (int i = 0; i < bulletCount; i++)
         {
             Bullet bullet = bullets[i];
-            bulletContainer.GetChild(i).transform.position = cam.ScreenToWorldPoint(new Vector3(bullet.x, Screen.height - bullet.y, 10));
+            bulletContainer.GetChild(i).transform.position = cam.ScreenToWorldPoint(new Vector3(bullet.x, Screen.height - bullet.y, 10)+offset);
         }
     }
 
