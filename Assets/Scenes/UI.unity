@@ -309,6 +309,7 @@ MonoBehaviour:
   - {fileID: 1818814017}
   - {fileID: 38878617}
   updateKey: 32
+  updateInterval: 2
 --- !u!114 &765165812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -324,6 +325,7 @@ MonoBehaviour:
   bulletReader:
     path: /bullets.json
   bulletPrefab: {fileID: 3641143648169423873, guid: c7e5c66f85ad90f4a9696b410261e850, type: 3}
+  bulletCap: 20
 --- !u!1 &795108063
 GameObject:
   m_ObjectHideFlags: 0
