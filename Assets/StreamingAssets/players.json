@@ -15,7 +15,7 @@
             "bangBulletCount": 4,
             "clickBullet": 4,
             "diamondCount": 0,
-            "num_picture": 0,
+            "pictureCount": 0,
             "hasSurrender": false
         },
         {
@@ -24,7 +24,7 @@
             "bangBulletCount": 4,
             "clickBullet": 4,
             "diamondCount": 0,
-            "num_picture": 0,
+            "pictureCount": 0,
             "hasSurrender": false
         },
         {
@@ -33,7 +33,7 @@
             "bangBulletCount": 4,
             "clickBullet": 4,
             "diamondCount": 0,
-            "num_picture": 0,
+            "pictureCount": 0,
             "hasSurrender": false
         }
     ]

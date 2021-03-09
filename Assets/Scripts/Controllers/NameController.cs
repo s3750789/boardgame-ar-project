@@ -9,9 +9,14 @@ public class NameController : MonoBehaviour
     private NameReader nameReader;
     [SerializeField]
     private NameView[] nameViews;
-    private void Start()
+    private IEnumerator Start()
     {
-        UpdateViews();
+        while (true)
+        {
+
+            UpdateViews();
+            yield return new WaitForSeconds(5);
+        }
     }
     private void UpdateViews()
     {
