@@ -47,7 +47,12 @@ public class BulletController : MonoBehaviour
         for (int i = 0; i < bulletCount; i++)
         {
             Bullet bullet = bullets[i];
-            bulletContainer.GetChild(i).transform.position = cam.ScreenToWorldPoint(new Vector3(bullet.x, Screen.height - bullet.y, 10)+offset);
+            Transform bulletTransform = bulletContainer.GetChild(i);
+            Vector3 center = new Vector3((bullet.x1 + bullet.x2) / 2, (bullet.y1 + bullet.y2) / 2, 0);
+            Vector3 diff = new Vector3(bullet.x2 - bullet.x1, bullet.y2 - bullet.y1, 0);
+            float angle = Mathf.Atan2(diff.y, diff.x);
+            bulletTransform.position = cam.ScreenToWorldPoint(center + offset);
+            bulletTransform.rotation = Quaternion.Euler(0, angle, 0);
         }
     }
 

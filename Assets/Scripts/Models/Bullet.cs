@@ -5,8 +5,10 @@ using UnityEngine;
 [System.Serializable]
 public class Bullet
 {
-    public int x;
-    public int y;
+    public float x1;
+    public float y1;
+    public float x2;
+    public float y2;
     public string type;
 }
 [System.Serializable]
