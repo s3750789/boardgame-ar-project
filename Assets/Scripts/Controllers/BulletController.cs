@@ -52,7 +52,7 @@ public class BulletController : MonoBehaviour
             Vector3 diff = new Vector3(bullet.x2 - bullet.x1, bullet.y2 - bullet.y1, 0);
             float angle = Mathf.Atan2(diff.y, diff.x) * Mathf.Rad2Deg;
             bulletTransform.position = cam.ScreenToWorldPoint(center + offset);
-            bulletTransform.rotation = Quaternion.Euler(0, 0, angle);
+            bulletTransform.rotation = Quaternion.Euler(0, angle,0);
         }
     }
 
