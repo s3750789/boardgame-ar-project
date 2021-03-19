@@ -48,11 +48,14 @@ public class BulletController : MonoBehaviour
         {
             Bullet bullet = bullets[i];
             Transform bulletTransform = bulletContainer.GetChild(i);
-            Vector3 center = new Vector3((bullet.x1 + bullet.x2) / 2, (bullet.y1 + bullet.y2) / 2, 0);
-            Vector3 diff = new Vector3(bullet.x2 - bullet.x1, bullet.y2 - bullet.y1, 0);
+            Vector3 head = new Vector3(bullet.x1 + bullet.x2, bullet.y1 + bullet.y2) / 2;
+            Vector3 tail = new Vector3(bullet.x3 + bullet.x4, bullet.y3 + bullet.y4) / 2;
+            Vector3 diff = head - tail;
+            Vector3 center = (head + tail) / 2;
+            float size = diff.magnitude;
             float angle = Mathf.Atan2(diff.y, diff.x) * Mathf.Rad2Deg;
             bulletTransform.position = cam.ScreenToWorldPoint(center + offset);
-            bulletTransform.rotation = Quaternion.Euler(0, angle,0);
+            bulletTransform.rotation = Quaternion.Euler(0, angle, 0);
         }
     }
 
