@@ -13,6 +13,7 @@ public class Player
     public int clickBulletCount;
     public int diamondCount;
     public int pictureCount;
+    public int cashFromPicture;
     public bool hasSurrender;
 }
 [System.Serializable]

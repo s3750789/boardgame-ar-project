@@ -4,13 +4,15 @@
             "name": "Khai",
             "life": 3,
             "cash": [
-                1000,
+                8000,
+                2000,
+                2000,
                 2000
             ],
             "bangBulletCount": 0,
             "clickBulletCount": 3,
             "diamondCount": 1,
-            "pictureCount": 1
+            "pictureCount": 2
         },
         {
             "name": "Tin",

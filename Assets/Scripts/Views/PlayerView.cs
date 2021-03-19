@@ -17,11 +17,11 @@ public class PlayerView : MonoBehaviour, IView<Player>
     public void UpdateView(Player player)
     {
         nameText.text = player.name;
-        cashText.text = string.Format("Cash: {0}", player.money);
-        bangBulletCountText.text = string.Format("Bang: {0}", player.bangBulletCount);
-        clickBulletCountText.text = string.Format("Click: {0}", player.clickBulletCount);
-        diamondCountText.text = string.Format("Diamond: {0}", player.diamondCount);
-        pictureCountText.text = string.Format("Picture: {0}", player.pictureCount);
+        cashText.text = string.Format("${0}", player.money);
+        bangBulletCountText.text = string.Format("x{0}", player.bangBulletCount);
+        clickBulletCountText.text = string.Format("x{0}", player.clickBulletCount);
+        diamondCountText.text = string.Format("x{0}", player.diamondCount);
+        pictureCountText.text = string.Format("x{0} (+{1})", player.pictureCount, player.cashFromPicture);
 
         foreach (var heart in hearts)
         {
