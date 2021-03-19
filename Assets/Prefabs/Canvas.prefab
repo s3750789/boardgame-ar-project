@@ -2964,7 +2964,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8542642131897246516}
   - component: {fileID: 8542642131897246517}
-  - component: {fileID: 8542642132911989479}
   m_Layer: 5
   m_Name: PlayerUI
   m_TagString: Untagged
@@ -3010,6 +3009,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0d10394fb804e6458767a7a46e4fb35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nameText: {fileID: 8542642132864986378}
   cashText: {fileID: 8542642131974240258}
   emptyHeartColor: {r: 0.30980393, g: 0.30980393, b: 0.30980393, a: 1}
   bangBulletCountText: {fileID: 1645529456}
@@ -3020,19 +3020,6 @@ MonoBehaviour:
   - {fileID: 8542642132066401117}
   - {fileID: 8542642132806213873}
   - {fileID: 8542642132174289726}
---- !u!114 &8542642132911989479
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8542642131897246523}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d92c49eef6c59984590e54a75b3742b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nameText: {fileID: 8542642132864986378}
 --- !u!1 &8542642131974240256
 GameObject:
   m_ObjectHideFlags: 0
@@ -3461,7 +3448,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8542642132180649187}
   - component: {fileID: 8542642132180649117}
-  - component: {fileID: 8542642132911989477}
   m_Layer: 5
   m_Name: PlayerUI (2)
   m_TagString: Untagged
@@ -3507,6 +3493,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0d10394fb804e6458767a7a46e4fb35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nameText: {fileID: 8542642132911719506}
   cashText: {fileID: 8542642132172628360}
   emptyHeartColor: {r: 0.30980393, g: 0.30980393, b: 0.30980393, a: 1}
   bangBulletCountText: {fileID: 689749485}
@@ -3517,19 +3504,6 @@ MonoBehaviour:
   - {fileID: 3594822589345412319}
   - {fileID: 552174804994541191}
   - {fileID: 7890147667195771552}
---- !u!114 &8542642132911989477
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8542642132180649186}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d92c49eef6c59984590e54a75b3742b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nameText: {fileID: 8542642132911719506}
 --- !u!1 &8542642132358685964
 GameObject:
   m_ObjectHideFlags: 0
@@ -3921,7 +3895,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8542642132883611467}
   - component: {fileID: 8542642132883611461}
-  - component: {fileID: 8542642132911989480}
   m_Layer: 5
   m_Name: PlayerUI (3)
   m_TagString: Untagged
@@ -3967,6 +3940,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0d10394fb804e6458767a7a46e4fb35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nameText: {fileID: 8542642133588090307}
   cashText: {fileID: 8542642133705570481}
   emptyHeartColor: {r: 0.30980393, g: 0.30980393, b: 0.30980393, a: 1}
   bangBulletCountText: {fileID: 1192259785}
@@ -3977,19 +3951,6 @@ MonoBehaviour:
   - {fileID: 6772110072863937084}
   - {fileID: 6651911013196474133}
   - {fileID: 2122154655138024835}
---- !u!114 &8542642132911989480
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8542642132883611466}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d92c49eef6c59984590e54a75b3742b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nameText: {fileID: 8542642133588090307}
 --- !u!1 &8542642132911719504
 GameObject:
   m_ObjectHideFlags: 0
@@ -4134,7 +4095,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8542642133232661482}
   - component: {fileID: 8542642133232661483}
-  - component: {fileID: 8542642132911989478}
   m_Layer: 5
   m_Name: PlayerUI (1)
   m_TagString: Untagged
@@ -4180,6 +4140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0d10394fb804e6458767a7a46e4fb35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nameText: {fileID: 8542642133695383438}
   cashText: {fileID: 8542642132358685966}
   emptyHeartColor: {r: 0.30980393, g: 0.30980393, b: 0.30980393, a: 1}
   bangBulletCountText: {fileID: 1288509912}
@@ -4190,19 +4151,6 @@ MonoBehaviour:
   - {fileID: 8686630020813895964}
   - {fileID: 4735246687518586682}
   - {fileID: 4642167845168057344}
---- !u!114 &8542642132911989478
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8542642133232661481}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d92c49eef6c59984590e54a75b3742b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nameText: {fileID: 8542642133695383438}
 --- !u!1 &8542642133581987705
 GameObject:
   m_ObjectHideFlags: 0

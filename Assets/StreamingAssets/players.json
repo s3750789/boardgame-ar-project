@@ -1,40 +1,50 @@
 {
     "players": [
         {
+            "name": "Khai",
             "life": 3,
-            "cash": 10000,
+            "cash": [
+                1000,
+                2000
+            ],
             "bangBulletCount": 0,
             "clickBulletCount": 3,
             "diamondCount": 1,
-            "pictureCount": 0,
-            "hasSurrender": false
+            "pictureCount": 1
         },
         {
+            "name": "Tin",
             "life": 3,
-            "cash": 0,
+            "cash": [],
             "bangBulletCount": 4,
             "clickBullet": 4,
             "diamondCount": 0,
-            "pictureCount": 0,
-            "hasSurrender": false
+            "pictureCount": 0
         },
         {
+            "name": "Han",
             "life": 3,
-            "cash": 0,
+            "cash": [
+                1000,
+                2000
+            ],
             "bangBulletCount": 4,
             "clickBullet": 4,
             "diamondCount": 0,
-            "pictureCount": 0,
-            "hasSurrender": false
+            "pictureCount": 0
         },
         {
+            "name": "Hieu",
             "life": 3,
-            "cash": 0,
+            "cash": [
+                1000,
+                2000,
+                3000
+            ],
             "bangBulletCount": 4,
             "clickBullet": 4,
             "diamondCount": 0,
-            "pictureCount": 0,
-            "hasSurrender": false
+            "pictureCount": 0
         }
     ]
 }

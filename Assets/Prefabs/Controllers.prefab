@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4516575335948582005}
   - component: {fileID: 4516575335948582007}
-  - component: {fileID: 4516575335948582006}
   - component: {fileID: 4516575335948582000}
   m_Layer: 0
   m_Name: Controllers
@@ -54,25 +53,6 @@ MonoBehaviour:
   - {fileID: 0}
   updateKey: 32
   updateInterval: 2
---- !u!114 &4516575335948582006
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4516575335948582004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c8ef0b9d79210342a873186c733c87b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nameReader:
-    path: /names.json
-  nameViews:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!114 &4516575335948582000
 MonoBehaviour:
   m_ObjectHideFlags: 0

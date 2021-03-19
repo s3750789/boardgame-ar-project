@@ -5,7 +5,9 @@ using UnityEngine;
 [System.Serializable]
 public class Player
 {
-    public int cash;
+    public string name;
+    public int money;
+    public int[] cash;
     public int life;
     public int bangBulletCount;
     public int clickBulletCount;
