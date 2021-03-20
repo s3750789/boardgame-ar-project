@@ -61,10 +61,14 @@ public class BulletController : MonoBehaviour
             Vector3 tail = (bottomLeft + bottomRight) / 2;
             Vector3 diff = head - tail;
             Vector3 center = (head + tail) / 2;
-            float size = diff.magnitude;
             float angle = Mathf.Atan2(diff.y, diff.x) * Mathf.Rad2Deg;
+            Quaternion rotation = Quaternion.Euler(-angle, 90, 0);
+            float size = diff.magnitude;
+            FixedTransform fixedTransform = bulletTransform.GetComponent<FixedTransform>();
+            fixedTransform.Position = center;
             bulletTransform.position = center;
-            bulletTransform.rotation = Quaternion.Euler(-angle, 90, 0);
+            fixedTransform.Rotation = rotation;
+            bulletTransform.rotation = rotation;
             bulletTransform.localScale = new Vector3(1, 1, 1) * size * bulletScaleFactor;
         }
     }
