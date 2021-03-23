@@ -14,6 +14,7 @@ public class PlayerView : MonoBehaviour, IView<Player>
     [SerializeField] private TextMeshProUGUI diamondCountText;
     [SerializeField] private TextMeshProUGUI pictureCountText;
     [SerializeField] private Image[] hearts;
+    [SerializeField] private Color deadColor;
     public void UpdateView(Player player)
     {
         nameText.text = player.name;
@@ -30,6 +31,16 @@ public class PlayerView : MonoBehaviour, IView<Player>
         for (int i = 0; i < Mathf.Min(hearts.Length, player.life); i++)
         {
             hearts[i].color = Color.white;
+        }
+        if(player.life<=0){
+            foreach (var text in GetComponentsInChildren<TextMeshProUGUI>())
+            {
+                text.color = deadColor;
+            }
+            foreach (var image in GetComponentsInChildren<Image>())
+            {
+                image.color = deadColor;
+            }
         }
     }
 }

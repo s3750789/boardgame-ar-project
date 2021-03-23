@@ -475,6 +475,7 @@ MonoBehaviour:
   - {fileID: 5270371356390306914}
   - {fileID: 8092598927369531761}
   - {fileID: 2670865548398445354}
+  deadColor: {r: 0.22745098, g: 0.22745098, b: 0.22745098, a: 1}
 --- !u!1 &1157898438479227794
 GameObject:
   m_ObjectHideFlags: 0
@@ -618,6 +619,7 @@ MonoBehaviour:
   - {fileID: 5642034304037541355}
   - {fileID: 6967880488363097595}
   - {fileID: 2401871307808035469}
+  deadColor: {r: 0.22745098, g: 0.22745098, b: 0.22745098, a: 1}
 --- !u!1 &1669533273910470345
 GameObject:
   m_ObjectHideFlags: 0
@@ -4019,6 +4021,7 @@ MonoBehaviour:
   - {fileID: 4853401922396185112}
   - {fileID: 7425759409981147049}
   - {fileID: 7995846697492607358}
+  deadColor: {r: 0.22745098, g: 0.22745098, b: 0.22745098, a: 1}
 --- !u!1 &6640324140815563271
 GameObject:
   m_ObjectHideFlags: 0
@@ -5169,6 +5172,7 @@ MonoBehaviour:
   - {fileID: 8542642132066401117}
   - {fileID: 8542642132806213873}
   - {fileID: 8542642132174289726}
+  deadColor: {r: 0.22745098, g: 0.22745098, b: 0.22745098, a: 1}
 --- !u!1 &8542642132066401187
 GameObject:
   m_ObjectHideFlags: 0
