@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
+    <ImageTarget name="table_small" size="200.000000 120.000000" />
+    <ImageTarget name="table_down" size="200.000000 398.952881" />
+    <ImageTarget name="table" size="200.000000 414.084503" />
+    <ImageTarget name="pict_5" size="200.000000 390.425537" />
+    <ImageTarget name="pict_4" size="200.000000 397.555023" />
+    <ImageTarget name="pict_3" size="200.000000 400.000000" />
+    <ImageTarget name="pict_2" size="200.000000 421.195648" />
+    <ImageTarget name="pict_1" size="200.000000 399.433441" />
+    <ImageTarget name="money_10000" size="200.000000 405.911316" />
+    <ImageTarget name="money_5000" size="200.000000 491.316528" />
+    <ImageTarget name="diamon_big" size="200.000000 76.626503" />
+    <ImageTarget name="diamon_5000" size="200.000000 431.331604" />
     <ImageTarget name="char_1_1" size="5.000000 14.071428" />
     <ImageTarget name="char_2_q" size="5.000000 15.015899" />
     <ImageTarget name="char_3_q" size="5.000000 12.729323" />
     <ImageTarget name="char_4_q" size="5.000000 13.223201" />
-    <ImageTarget name="char_4" size="5.000000 15.846560" />
-    <ImageTarget name="character_2" size="1.000000 3.473684" />
-    <ImageTarget name="character_1" size="5.000000 18.909090" />
   </Tracking>
 </QCARConfig>
